@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Column Selector</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3" />
+    <meta http-equiv="description" content="this is my page" />
+    <meta http-equiv="content-type" content="text/html; charset=GB18030" />
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <script type="text/javascript">
+
+        //全不选
+        function unselectall() {
+            if (document.selectForm.chkAll.checked) {
+                document.selectForm.chkAll.checked = document.selectForm.chkAll.checked & 0;
+            }
+        }
+
+        //全选
+        function CheckAll(form) {
+            for (var i = 0; i < form.elements.length; i++) {
+                var e = form.elements[i];
+                if (e.name != 'chkAll' && e.disabled == false)
+                    e.checked = form.chkAll.checked;
+            }
+        }
+
+        function clickCancel() {
+            //window.returnValue = "";
+            window.close();
+        }
+
+        //设置 Cookie 
+        function setCookie(name, value, expires, path, domain, secure) {
+            var today = new Date();
+            today.setTime(today.getTime());
+            if (expires) {
+                expires = expires * 1000 * 60 * 60 * 24;
+            }
+            var expires_date = new Date(today.getTime() + (expires));
+            document.cookie = name + '=' + escape(value) +
+			((expires) ? ';expires=' + expires_date.toGMTString() : '') + //expires.toGMTString()
+			((path) ? ';path=' + path : '') +
+			((domain) ? ';domain=' + domain : '') +
+			((secure) ? ';secure' : '');
+        }
+
+
+
+        function getCookieVal(offset) {
+            var endstr = document.cookie.indexOf(";", offset);
+            if (endstr == -1) {
+                endstr = document.cookie.length;
+            }
+            return unescape(document.cookie.substring(offset, endstr));
+        }
+
+
+
+        function getCookie(name) {
+            var arg = name + "=";
+            var alen = arg.length;
+            var clen = document.cookie.length;
+            var i = 0;
+            while (i < clen) {
+                var j = i + alen;
+                if (document.cookie.substring(i, j) == arg) {
+                    return getCookieVal(j);
+                }
+                i = document.cookie.indexOf(" ", i) + 1;
+                if (i == 0) break;
+            }
+            return;
+        }
+
+        function LoadSetting() {
+            var str = getCookie("JoRouteListColSelector");
+            if (str == null || str == "")
+                return;
+            var fm = document.getElementById("selectForm");
+            unselectall();
+            CheckAll(fm);
+            var curArray = str.split(",");
+            for (var k = 0; k < curArray.length; k++) {
+                for (var i = 0; i < fm.elements.length; i++) {
+                    var e = fm.elements[i];
+                    if (e.name != 'chkAll' && e.type == 'checkbox' && e.value == curArray[k]) {
+                        e.checked = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+
+        function SaveSettings(fm) {
+            var a = "";
+            for (var i = 0; i < fm.elements.length; i++) {
+                var e = fm.elements[i];
+                if (e.name != 'chkAll' && e.type == 'checkbox') {
+                    if (e.checked)
+                        a = a == "" ? "1" : a + ",1";
+                    else
+                        a = a + ",0";
+                }
+            }
+            setCookie("JoRouteListColSelector", a, 9999);
+        }
+
+
+        function returnStr(fm) {
+            var tmp = "";
+            for (var i = 0; i < fm.elements.length; i++) {
+                var e = fm.elements[i];
+                if (e.type == 'checkbox' && e.name != 'chkAll' && e.checked) {
+                    tmp += e.value + ",";
+                }
+                if (e.type == 'checkbox' && e.name != 'chkAll' && e.checked == false) {
+                    tmp += "" + ",";
+                }
+            }
+            //alert(tmp);
+            //SaveSettings(fm);
+            setCookie("JoRouteListColSelector", tmp, 9999);
+            window.returnValue = tmp;
+            window.close();
+        }
+	
+    </script>
+</head>
+<!--<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="LoadSetting()">-->
+<body style="margin-left: 0; margin-top: 0; background-color: #FFFFFF; color: #000000"
+    onload="LoadSetting()">
+    <div align="center">
+        <form name="selectForm" method="post" id="myForm" action="">
+        <!--<table width="95%" height="100%" bordercolor="" align="center" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">-->
+        <table style="width: 95%; height: 100%; border-color: transparent; border-collapse: collapse"
+            align="center" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td height="10px">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <input type="checkbox" value="" checked="checked" onclick="CheckAll(this.form)" name="chkAll" />
+                    (Select All)
+                    <br />
+                    <!-- <input type="checkbox" value="0" checked="checked" onclick="unselectall()" name="cln">
+						Factory
+						<br>
+						 -->
+                    <input type="checkbox" value="1" checked="checked" onclick="unselectall()" name="cln" />
+                    Job Order No.
+                    <br />
+                    <input type="checkbox" value="2" checked="checked" onclick="unselectall()" name="cln" />
+                    Job Code
+                    <br />
+                    <input type="checkbox" value="3" checked="checked" onclick="unselectall()" name="cln" />
+                    Operation Code
+                    <br />
+                    <input type="checkbox" value="4" checked="checked" onclick="unselectall()" name="cln" />
+                    Operation Name
+                    <br />
+                    <input type="checkbox" value="5" checked="checked" onclick="unselectall()" name="cln" />
+                    Operation Name(Chinese)
+                    <br />
+                    <input type="checkbox" value="6" checked="checked" onclick="unselectall()" name="cln" />
+                    Operation Description
+                    <br />
+                    <input type="checkbox" value="7" checked="checked" onclick="unselectall()" name="cln" />
+                    Process Code
+                    <br />
+                    <input type="checkbox" value="8" checked="checked" onclick="unselectall()" name="cln" />
+                    Check Point Code
+                    <br />
+                    <input type="checkbox" value="9" checked="checked" onclick="unselectall()" name="cln" />
+                    Grad
+                    <br />
+                    <input type="checkbox" value="10" checked="checked" onclick="unselectall()" name="cln" />
+                    SAM
+                    <br />
+                    <input type="checkbox" value="11" checked="checked" onclick="unselectall()" name="cln" />
+                    Piece Rate
+                    <br />
+                    <input type="checkbox" value="12" checked="checked" onclick="unselectall()" name="cln" />
+                    Print Flag
+                    <br />
+                    <input type="checkbox" value="13" checked="checked" onclick="unselectall()" name="cln" />
+                    Pattern Type Code
+                    <br />
+                    <input type="checkbox" value="14" checked="checked" onclick="unselectall()" name="cln" />
+                    Part Code
+                    <br />
+                    <input type="checkbox" value="15" checked="checked" onclick="unselectall()" name="cln" />
+                    Create Date
+                    <br />
+                    <input type="checkbox" value="16" checked="checked" onclick="unselectall()" name="cln" />
+                    Create User ID
+                    <br />
+                    <input type="checkbox" value="17" checked="checked" onclick="unselectall()" name="cln" />
+                    Approve Date
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="Button" name="okbtn" style="width: 5em" onclick="returnStr(this.form)"
+                        value="OK" />
+                    &nbsp;
+                    <input type="Button" name="cancelbtn" onclick="clickCancel()" value="Cancel" />
+                </td>
+            </tr>
+            <tr>
+                <td height="10px">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+</body>
+</html>

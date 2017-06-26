@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CloseJOListReport" xml:space="preserve">
+    <value>关单报表</value>
+    <comment>CLOSE JO LIST REPORT</comment>
+  </data>
+  <data name="CloseState" xml:space="preserve">
+    <value>关单状态:</value>
+    <comment>CLOSE JO LIST REPORT</comment>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>结束日期:</value>
+    <comment>CLOSE JO LIST REPORT</comment>
+  </data>
+  <data name="FACTORY_CD" xml:space="preserve">
+    <value>生产工厂:        </value>
+    <comment>CLOSE JO LIST REPORT</comment>
+  </data>
+  <data name="GarmentType" xml:space="preserve">
+    <value>类型（针/梭）</value>
+    <comment>CLOSE JO LIST REPORT</comment>
+  </data>
+  <data name="IntervalD" xml:space="preserve">
+    <value>间隔时间/天</value>
+    <comment>CLOSE JO LIST REPORT</comment>
+  </data>
+  <data name="JobOrderNo" xml:space="preserve">
+    <value>制单号:</value>
+    <comment>CLOSE JO LIST REPORT</comment>
+  </data>
+  <data name="ProcessCode" xml:space="preserve">
+    <value>部门:</value>
+    <comment>CLOSE JO LIST REPORT</comment>
+  </data>
+  <data name="ProcessType" xml:space="preserve">
+    <value>部门类型:</value>
+    <comment>CLOSE JO LIST REPORT</comment>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>开始日期:</value>
+    <comment>CLOSE JO LIST REPORT</comment>
+  </data>
+  <data name="STRING_ACTUAL_QTY" xml:space="preserve">
+    <value>实裁数</value>
+  </data>
+  <data name="STRING_ALL_JO" xml:space="preserve">
+    <value>所有的订单</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_ANNUAL_JO" xml:space="preserve">
+    <value>一年内订单</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_BALANCE_QTY" xml:space="preserve">
+    <value>结余数</value>
+    <comment>PRE CUT SUMMARY REPORT</comment>
+  </data>
+  <data name="STRING_BAL_QTY" xml:space="preserve">
+    <value>剩余数</value>
+  </data>
+  <data name="STRING_BINDING_FAB" xml:space="preserve">
+    <value>扎数</value>
+    <comment>PRE CUT SUMMARY REPORT</comment>
+  </data>
+  <data name="STRING_BULK_FAB_QTY" xml:space="preserve">
+    <value>大货数</value>
+    <comment>PRE CUT SUMMARY REPORT</comment>
+  </data>
+  <data name="STRING_BUNDLE_NO" xml:space="preserve">
+    <value>扎号</value>
+  </data>
+  <data name="STRING_BUTTON_PRINT" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="STRING_CARD_USER_ID" xml:space="preserve">
+    <value>刷卡人员</value>
+  </data>
+  <data name="STRING_COLOR_CD" xml:space="preserve">
+    <value>颜色</value>
+  </data>
+  <data name="STRING_COLOR_DESC" xml:space="preserve">
+    <value>颜色描述</value>
+  </data>
+  <data name="STRING_CURRENT_TOTAL_BUNDLE_NO" xml:space="preserve">
+    <value>当前总扎数</value>
+    <comment>GarmentTransferNote</comment>
+  </data>
+  <data name="STRING_CURRENT_TOTAL_QTY" xml:space="preserve">
+    <value>当前总件数</value>
+    <comment>GarmentTransferNote</comment>
+  </data>
+  <data name="STRING_CUSTOMER" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="STRING_CUSTOMER_CD" xml:space="preserve">
+    <value>按客户</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_CUST_STYLE" xml:space="preserve">
+    <value>客款号</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_CUT_LOT_NO" xml:space="preserve">
+    <value>床次</value>
+  </data>
+  <data name="STRING_CUT_SEW_INQUERY" xml:space="preserve">
+    <value>分组查询裁车WIP</value>
+    <comment>MES WEB REPORT(LEFT)</comment>
+  </data>
+  <data name="STRING_DATE_RANGE" xml:space="preserve">
+    <value>日期范围</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_DATE_TIME" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="STRING_DELIVERY_DATE" xml:space="preserve">
+    <value>送货日期</value>
+  </data>
+  <data name="STRING_DOC_NO" xml:space="preserve">
+    <value>DOC NO.</value>
+  </data>
+  <data name="STRING_EMB_STATUS" xml:space="preserve">
+    <value>绣花否</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_FABRIC_TYPE" xml:space="preserve">
+    <value>花型</value>
+  </data>
+  <data name="STRING_FABRIC_WIDTH" xml:space="preserve">
+    <value>布封</value>
+  </data>
+  <data name="STRING_FAB_BALANCE" xml:space="preserve">
+    <value>剩布数</value>
+  </data>
+  <data name="STRING_FAB_REQUIRE" xml:space="preserve">
+    <value>上布数</value>
+  </data>
+  <data name="STRING_FELL_TYPE" xml:space="preserve">
+    <value>埋夹方式</value>
+    <comment>CheckPoint Report</comment>
+  </data>
+  <data name="STRING_FROM_DEPARTMENT" xml:space="preserve">
+    <value>送出部门</value>
+  </data>
+  <data name="STRING_FROM_LINE" xml:space="preserve">
+    <value>送出组别</value>
+  </data>
+  <data name="STRING_FUZZY" xml:space="preserve">
+    <value>模糊</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_GARMENT_TRANSFER_RPT_TITLE_ALL_DEPTS" xml:space="preserve">
+    <value>衣 服 流 转 单</value>
+  </data>
+  <data name="STRING_GMT_TYPE" xml:space="preserve">
+    <value>按订单类型(K/W)</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_GMT_TYPE1" xml:space="preserve">
+    <value>订单类型</value>
+  </data>
+  <data name="STRING_GO_NO" xml:space="preserve">
+    <value>按GO</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_GO_REC_YDS" xml:space="preserve">
+    <value>GO接收数</value>
+    <comment>PRE CUT SUMMARY REPORT</comment>
+  </data>
+  <data name="STRING_INC_OUTSOURCE" xml:space="preserve">
+    <value>包括全单外发数据</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_INQUERY_RANGE" xml:space="preserve">
+    <value>查询日期范围</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_JO_BASIC_INFO" xml:space="preserve">
+    <value>制单基本信息区</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_JO_NO" xml:space="preserve">
+    <value>制单号</value>
+  </data>
+  <data name="STRING_JO_TOTAL_QTY" xml:space="preserve">
+    <value>当前总计</value>
+  </data>
+  <data name="STRING_LINE_CODE" xml:space="preserve">
+    <value>组别</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_LINE_DATA" xml:space="preserve">
+    <value>组别信息</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_LINE_NAME_STYLE" xml:space="preserve">
+    <value>显示组别，名称，款式</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_MARKER_ALLOCTED_YDS" xml:space="preserve">
+    <value>分配数</value>
+    <comment>PRE CUT SUMMARY REPORT</comment>
+  </data>
+  <data name="STRING_MARKER_CD" xml:space="preserve">
+    <value>目的地</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_MARKER_YPD" xml:space="preserve">
+    <value>唛架YPD</value>
+  </data>
+  <data name="STRING_MU" xml:space="preserve">
+    <value>唛架利用率</value>
+  </data>
+  <data name="STRING_NET_YPD" xml:space="preserve">
+    <value>净YPD</value>
+  </data>
+  <data name="STRING_NO_DATE" xml:space="preserve">
+    <value>无明细数据</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_ORDER_QTY" xml:space="preserve">
+    <value>订单数</value>
+  </data>
+  <data name="STRING_OS_ALLOWED" xml:space="preserve">
+    <value>允许出货范围</value>
+  </data>
+  <data name="STRING_OS_CUT_PERCENT" xml:space="preserve">
+    <value>加减裁比例</value>
+  </data>
+  <data name="STRING_OS_CUT_QTY" xml:space="preserve">
+    <value>加减裁件数</value>
+  </data>
+  <data name="STRING_PLAN_CUT_QTY" xml:space="preserve">
+    <value>预裁数</value>
+  </data>
+  <data name="STRING_PODATE" xml:space="preserve">
+    <value>按货期</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_PODATE1" xml:space="preserve">
+    <value>交期</value>
+  </data>
+  <data name="STRING_PPO_NO" xml:space="preserve">
+    <value>PPO No.</value>
+  </data>
+  <data name="STRING_PRINT_STATUS" xml:space="preserve">
+    <value>印花否</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_PROCESS" xml:space="preserve">
+    <value>按部门</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_PROCESS_CODE" xml:space="preserve">
+    <value>部门</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_PROCESS_TYPE" xml:space="preserve">
+    <value>生产类型</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_PRODUCTION_FACTORY" xml:space="preserve">
+    <value>生产工厂</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_PRODUCTION_INQUERY" xml:space="preserve">
+    <value>生产状态查询</value>
+    <comment>MES WEB REPORT(LEFT)</comment>
+  </data>
+  <data name="STRING_PRODUCTION_STATUS" xml:space="preserve">
+    <value>即时生产数据查询</value>
+    <comment>MES WEB REPORT_TITLE</comment>
+  </data>
+  <data name="STRING_PRODUCTION_YMG_INQUERY" xml:space="preserve">
+    <value>生产状态批量查询</value>
+    <comment>MES WEB REPORT(LEFT)</comment>
+  </data>
+  <data name="STRING_PRODUCT_CATEGORY" xml:space="preserve">
+    <value>按产品类别</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_PROD_LINE" xml:space="preserve">
+    <value>按组别</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_QTY" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="STRING_REMARK" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="STRING_SERIAL_NUMBER" xml:space="preserve">
+    <value>序号</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_SHIPPED_JO" xml:space="preserve">
+    <value>已出货单数据查询</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_SHIP_DATE" xml:space="preserve">
+    <value>出货日期</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_SHIP_MODE" xml:space="preserve">
+    <value>出货方式</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_SIZE_BREAK_DOWN_PLAN_QTY" xml:space="preserve">
+    <value>各尺码预裁数</value>
+  </data>
+  <data name="STRING_SIZE_CD" xml:space="preserve">
+    <value>尺码</value>
+  </data>
+  <data name="STRING_SPARE_FAB" xml:space="preserve">
+    <value>备用数</value>
+    <comment>PRE CUT SUMMARY REPORT</comment>
+  </data>
+  <data name="STRING_STYLE_DESC" xml:space="preserve">
+    <value>款式描述</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_STYLE_NO" xml:space="preserve">
+    <value>按款号</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_SUB_TOTAL" xml:space="preserve">
+    <value>总数</value>
+  </data>
+  <data name="STRING_SUMMARY" xml:space="preserve">
+    <value>汇总</value>
+  </data>
+  <data name="STRING_TOTAL" xml:space="preserve">
+    <value>总计</value>
+  </data>
+  <data name="STRING_TOTAL_BUNDLE_NO" xml:space="preserve">
+    <value>总计:（扎数）</value>
+    <comment>GarmentTransferNote</comment>
+  </data>
+  <data name="STRING_TOTAL_CUT_QTY" xml:space="preserve">
+    <value>实裁数</value>
+    <comment>GarmentTransferNote</comment>
+  </data>
+  <data name="STRING_TOTAL_OUTPUT_QTY" xml:space="preserve">
+    <value>输出累计总计</value>
+    <comment>GarmentTransferNote</comment>
+  </data>
+  <data name="STRING_TOTAL_QTY" xml:space="preserve">
+    <value>总送货数</value>
+  </data>
+  <data name="STRING_TOTAL_QTY_BY_PIC" xml:space="preserve">
+    <value>总计:（件数）</value>
+    <comment>GarmentTransferNote</comment>
+  </data>
+  <data name="STRING_TO_DEPARTMENT" xml:space="preserve">
+    <value>流入部门</value>
+  </data>
+  <data name="STRING_TO_LINE" xml:space="preserve">
+    <value>接收组别</value>
+  </data>
+  <data name="STRING_TRANSACTION_IN_INQUERY" xml:space="preserve">
+    <value>接收数查询</value>
+    <comment>MES WEB REPORT(LEFT)</comment>
+  </data>
+  <data name="STRING_TRANSACTION_OUT_INQUERY" xml:space="preserve">
+    <value>产量查询</value>
+    <comment>MES WEB REPORT(LEFT)</comment>
+  </data>
+  <data name="STRING_TRANSFER_STATUS_AREA" xml:space="preserve">
+    <value>流转状况信息区</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_TRANSFER_TIME" xml:space="preserve">
+    <value>流转时间</value>
+  </data>
+  <data name="STRING_TRANS_DATE" xml:space="preserve">
+    <value>按生产日期</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_UNCLOSE_JO" xml:space="preserve">
+    <value>没关单部份</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_UP_TO_DATE_TOTAL" xml:space="preserve">
+    <value>输出总计</value>
+  </data>
+  <data name="STRING_USER" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="STRING_VIEW" xml:space="preserve">
+    <value>查看</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_WASH_TYPE" xml:space="preserve">
+    <value>洗水方式</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_WASTAGE_RATE" xml:space="preserve">
+    <value>损耗率</value>
+  </data>
+  <data name="STRING_WIP" xml:space="preserve">
+    <value>WIP数</value>
+    <comment>MES WEB REPORT</comment>
+  </data>
+  <data name="STRING_WIP_INCLUDE_OUTSOURCE_PROCESS_OUT" xml:space="preserve">
+    <value>包含外发产量</value>
+  </data>
+  <data name="STRING_WIP_INQUERY" xml:space="preserve">
+    <value>WIP数查询</value>
+    <comment>MES WEB REPORT(LEFT)</comment>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>总计</value>
+    <comment>CLOSE JO LIST REPORT</comment>
+  </data>
+  <data name="STRING_CLOSE_DATE_FROM" xml:space="preserve">
+    <value>关单开始日期</value>
+  </data>
+  <data name="STRING_CLOSE_DATE_FROM_MESSAGE" xml:space="preserve">
+    <value>请输入关单开始日期</value>
+  </data>
+  <data name="STRING_CLOSE_DATE_TO" xml:space="preserve">
+    <value>关单结束日期</value>
+  </data>
+  <data name="STRING_CLOSE_DATE_TO_MESSAGE" xml:space="preserve">
+    <value>请输入关单结束日期</value>
+  </data>
+  <data name="STRING_JO" xml:space="preserve">
+    <value>制单</value>
+  </data>
+  <data name="STRING_JO_ERROR_MESSAGE" xml:space="preserve">
+    <value>请输入至少五个字母</value>
+  </data>
+  <data name="DATE_SELECTION_ERROR_MESSAGE" xml:space="preserve">
+    <value>关单开始及结束日期的差距必须在一个月内</value>
+  </data>
+</root>

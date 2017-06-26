@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MesReports">
+</Property><Property Name="解决方案文件" Value="D:\xzm\MES\Report\MesReports\MesReports.sln">
+</Property><Property Name="Date" Value="2016年3月25日">
+</Property><Property Name="Time" Value="16:35">
+</Property></Properties><Event ErrorLevel="2" Project="" Source="MesReports.sln" Description="无法转换解决方案文件“D:\xzm\MES\Report\MesReports\MesReports.sln”，因为它在磁盘上是只读的。若要转换此解决方案，请将此解决方案文件的权限更改为允许修改，然后重新打开它。">
+</Event><Event ErrorLevel="3" Project="" Source="MesReports.sln" Description="未转换">
+</Event></UpgradeLog>

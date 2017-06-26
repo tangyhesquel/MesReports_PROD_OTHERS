@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MesReports", "..\MesReports", "{E0828718-1C1A-49D5-BE32-A60B459BCB82}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/MES/Report/MesReports/MesReports_PROD_OTHERS", OGOCAAAA"
+		SccAuxPath = ""
+		SccLocalPath = "."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		Debug.AspNetCompiler.VirtualPath = "/MesReports"
+		Debug.AspNetCompiler.PhysicalPath = "..\MesReports\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\MesReports\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/MesReports"
+		Release.AspNetCompiler.PhysicalPath = "..\MesReports\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\MesReports\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62275"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SccWebProject1 = true
+		SccProjectUniqueName1 = .
+		SccLocalPath1 = F:\\soft\u0020data\\Garment\u0020需求相关文档资料\\0MES\\Source\u0020Code\\MES\u0020Reports\\MesReport_PROD\\MesReports
+		CanCheckoutShared = false
+		SccProjectEnlistmentChoice1 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0828718-1C1A-49D5-BE32-A60B459BCB82}.Debug|.NET.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

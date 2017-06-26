@@ -1,0 +1,144 @@
+﻿body
+{
+	font-size: 10pt;
+}
+.button
+{
+	border: 1px solid #003399;
+	font-family: Tahoma, Arial, 'Arial Black';
+	font-size: 9pt;
+	color: #0066cc;
+	background-color: #99ffff;
+	font-style: normal;
+	background-image: url('none');
+	cursor: hand;
+	width: 59px;
+    height: 20px;
+}
+.input
+{
+	background-color: #f5f5f5;
+}
+.title
+{
+	font-size: 15pt;
+	font-weight: bold;
+}
+
+A
+{
+	font-size: 12pt;
+	color: #006699;
+	text-decoration: none;
+}
+A:ACTIVE
+{
+	color: #006699;
+	text-decoration: none;
+}
+A:FOCUS
+{
+	color: black;
+	text-decoration: none;
+}
+A:HOVER
+{
+	color: #ff4500;
+	text-decoration: underline;
+}
+A:LINK
+{
+	text-decoration: none;
+}
+.hidden
+{
+	display: none;
+}
+
+.Freezing
+{
+	position: relative;
+	table-layout: fixed;
+	top: 0;
+	z-index: 99;
+}
+.tr2style
+{
+	font-weight: bolder;
+	font-size: 11px;
+	background-color: #efefe7;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	position: relative;
+	table-layout: fixed;
+	top: expression(this.offsetParent.scrollTop);
+	z-index: 10;
+}
+
+.thin
+{
+	border-color: Black;
+}
+.left
+{
+	border-left-style: solid;
+	border-left-width: 1;
+}
+.top
+{
+	border-top-style:solid;
+	border-top-width:1
+	}
+.thin th
+{
+	border-right-style: solid;
+	border-right-width: 1;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background-color:Silver
+}
+.thin td
+{
+	border-right-style: solid;
+	border-right-width: 1;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+}
+
+.tableHeader
+{
+	 /*background-color:#40E0D0;*/
+	 font-weight:bold;
+}
+
+ 
+.tableHeaderWithoutColor
+{
+	 
+	 font-weight:bold;
+}
+
+.FieldStyle
+{
+	 font-weight:bold;
+}
+
+.thinBorder 
+{
+    border-width:1px;
+    border-style:solid;
+    border-color:Black;      
+    margin:0px;
+    border-collapse:collapse;
+}
+
+.thinBorderWithoutTopBorder  
+{
+    border-width:1px;
+    border-style:solid;
+    border-color:Black;
+    margin:0px;
+    border-collapse:collapse;
+}
+
